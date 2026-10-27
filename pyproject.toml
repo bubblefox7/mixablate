@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bubblefox7-mixablate"
+version = "0.1.0"
+description = "检查配比消融是否覆盖了对照组，标出无法归因的实验"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "bubblefox7" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://bubblefox7.github.io"
+Repository = "https://github.com/bubblefox7/mixablate"
+Issues = "https://github.com/bubblefox7/mixablate/issues"
+
+[project.scripts]
+mixablate = "mixablate:main"
+
+[tool.setuptools]
+py-modules = ["mixablate"]
